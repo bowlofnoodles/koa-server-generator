@@ -4,8 +4,8 @@
   "description": "koa-server",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js",
+    "dev": "NODE_ENV=development nodemon app.js",
+    "start": "NODE_ENV=production node app.js",
     "lint": "eslint --fix \"src/**/*.js\"",
     "commit": "git-cz"
   },

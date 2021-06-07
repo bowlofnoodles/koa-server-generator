@@ -7,11 +7,7 @@ const router = require('./src/route');
 
 const app = new koa();
 
-app.use(
-  cors({
-    'Access-Control-Allow-Origin': '*'
-  })
-);
+app.use(cors());
 
 app.use(koaBody());
 
